@@ -6,7 +6,10 @@ Projet Web - UML : Code lego website
 Interface utilisateur et Administrateur (HTML + CSS)
 
 -> Interface de connexion 
+    -> Calque sur Roblox
 -> Interface de recherche du lego 
+    -> Faire un filtre par thème
+    -> Faire l'organisation 
 -> Interface de commande 
 
 -> Interface de livraison 

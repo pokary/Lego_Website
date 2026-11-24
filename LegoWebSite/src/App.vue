@@ -1,5 +1,3 @@
-
-
 <script setup>
 import{ ref } from 'vue'
 
@@ -9,28 +7,21 @@ import{ ref } from 'vue'
 
 <template>
 
-      <header>
-        <h1>Header de la page</h1>
-
+    <header>
+        <img src="/logo.png" alt="Icon" id="logo" />
+        <div class="logo-text">
+          <h1>Lego Website</h1>
+          <p>New construction for your home</p>
+          <router-link to="/" class="button">Store</router-link>
+        </div>
     </header>
-<main>
+    <main>
   
+      <p> test paragraphe </p>
 
 
 
 
 
-</main>
-    <footer>
-      <h1>Footer de la page</h1>
-    </footer>
+    </main>
 </template>
-
-<style scoped>
-header, footer {
-  color: black;
-  background-color: #f0f0f0;
-  padding: 20px;
-  text-align: center;
-}
-</style>
