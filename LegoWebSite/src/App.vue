@@ -1,8 +1,8 @@
 <script setup>
 import{ ref } from 'vue'
 import signIn from './components/signIn.vue'
-
-const IdLdog = ref(0)
+import { insiders } from './store'
+const userEmail = ref('')
 const choice = ref('')
 
 
@@ -29,6 +29,7 @@ function reset(){
 
 
 
+
 </script>
 
 <template>
@@ -47,7 +48,7 @@ function reset(){
       <div v-show = true>
 
         <button @click = "debog('login')">log in</button>
-        <signIn v-show="choice === 'login'"/> 
+        <signIn v-if="choice === 'login'"/> 
 
 
       </div> 
