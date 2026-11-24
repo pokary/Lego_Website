@@ -10,8 +10,7 @@ function direSalut() {
 
 <template>
   <div>
-    <h1>{{ message }}</h1>
-    <button @click="direSalut">Cliquer ici</button>
+    <h1>{{ message }}gnjo</h1>
   </div>
 </template>
 

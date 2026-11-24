@@ -1,5 +1,31 @@
 <script setup>
 import{ ref } from 'vue'
+import signIn from './components/signIn.vue'
+
+const IdLdog = ref(0)
+const choice = ref('')
+
+
+function upd_IdLog(id){
+  IdLog.value = id
+}
+
+function debog(val){
+  choice.value = val
+  console.log(val)
+}
+
+function jsp(val){
+  console.log('login')
+  console.log(val ==='login')
+  return val === 'login'
+}
+
+function reset(){
+  console.log('reset')
+  choice.value = ''
+  console.log(choice.value ==='login')
+}
 
 
 
@@ -16,6 +42,15 @@ import{ ref } from 'vue'
         </div>
     </header>
     <main>
+      <button @click = "reset()">reset</button>
+
+      <div v-show = true>
+
+        <button @click = "debog('login')">log in</button>
+        <signIn v-show="choice === 'login'"/> 
+
+
+      </div> 
   
       <p> test paragraphe </p>
 
