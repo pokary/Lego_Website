@@ -2,29 +2,56 @@
 
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
+
 :root {
   --lg_red: #cf1e1e;
   --border: rgba(5, 84, 174, 0.12);
 }
 
-/* Header style */ 
-#logo {
-    height: 100px;
-    width: fit-content;
+/* Commun balise style */ 
+
+button{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center; 
+    padding: 0.65rem 1.4rem;
+    font-family: inherit;
+    font-size: large;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    color: #ffffff;
+    background: linear-gradient(135deg, var(--lg_red), #a40c0c);
+    border: none;
+    border-radius: 999px;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(5, 84, 174, 0.25);
+    margin: 10px;
+    height: 45px;
 }
 
-.logo {
-  height: 50px;
+main {
+  color: black;
+  background-color: white; 
+  display: flex;
+  justify-content: center;
+  padding: 20px 40px;
+  border-bottom: 1px solid #ddd;
+  gap: 15px;
 }
-.logo-text h1 {
-  margin: 0;
-  font-size: 20px;
-  letter-spacing: 1px;
-}
-.logo-text p {
-  margin: 0;
-  font-size: 12px;
-  color: #666;
+
+
+
+
+/* Header style */ 
+
+header, footer {
+  color: black;
+  background-color: rgb(242, 205, 55);
+  display: flex;
+  align-items: center;
+  padding: 20px 40px;
+  border-bottom: 1px solid #ddd;
+  gap: 15px;
 }
 
 
@@ -43,17 +70,7 @@
     border-radius: 999px;
     cursor: pointer;
     box-shadow: 0 4px 12px rgba(5, 84, 174, 0.25);
-    transition: transform 0.2s ease, box-shadow 0.2s ease, filter 0.2s ease;
     margin: 10px;
-}
-
-
-header, footer {
-  color: black;
-  background-color: white;
-  display: flex;
-  align-items: center;
-  padding: 20px 40px;
-  border-bottom: 1px solid #ddd;
-  gap: 15px;
+    height: 45px;
+    width: fit-content;
 }
